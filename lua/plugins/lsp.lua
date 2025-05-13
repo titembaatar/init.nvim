@@ -1,6 +1,7 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
+    versiom = "1.11.0",
     opts = {
       ensure_installed = {
         -- LSP
@@ -29,7 +30,8 @@ return {
   },
 
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
+    versiom = "1.32.0",
     dependencies = { "williamboman/mason.nvim" },
     opts = {
       automatic_installation = true,
