@@ -5,6 +5,11 @@ return {
       picker = {
         prompt = " ; ",
         layout = { preset = "ivy", layout = { position = "bottom" } },
+        sources = {
+          explorer = { hidden = true, },
+          files = { hidden = true, },
+          grep = { hidden = true, },
+        },
       },
       explorer = {},
       notifier = {},
