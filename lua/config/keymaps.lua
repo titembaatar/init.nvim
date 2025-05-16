@@ -93,6 +93,7 @@ k.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 k.set("n", "<leader>cd", vim.diagnostic.open_float, { noremap = true, silent = true, desc = "Show Diagnostic" })
 k.set("n", "<leader>cf", function() vim.lsp.buf.format({ async = true }) end, { desc = "Format Document" })
 k.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
+k.set("n", "<leader>cx", "<Cmd>!chmod +x %<CR>", { desc = "chmod +x" })
 
 -- Debug <leader>d --
 k.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end, { desc = "Toggle Breakpoint" })
