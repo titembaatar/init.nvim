@@ -70,6 +70,7 @@ return {
         cssls = {},
         dockerls = {},
         gopls = {},
+        templ = {},
         html = {},
         jsonls = {},
         lua_ls = {
