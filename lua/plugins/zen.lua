@@ -26,10 +26,6 @@ return {
         gitsigns = { enabled = false },
         tmux = { enabled = true },
         todo = { enabled = false },
-        kitty = {
-          enabled = true,
-          font = "+2",
-        },
       },
       -- callback where you can add custom code when the Zen window opens
       on_open = function(win)
