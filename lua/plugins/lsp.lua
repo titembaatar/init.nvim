@@ -64,6 +64,7 @@ return {
           settings = {
             bashIde = {
               shellcheckPath = "shellcheck",
+              shellcheckArguments = { "--exclude=SC2086" },
             },
           },
         },
