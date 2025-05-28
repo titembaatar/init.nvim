@@ -168,32 +168,3 @@ k.set("n", "gy", "<Cmd>lua Snacks.picker.lsp_type_definitions()<CR>", { desc = "
 
 k.set("n", "[d", function() vim.diagnostic.jump({ count = -1, float = true }) end, { desc = "Previous Diagnostic" })
 k.set("n", "]d", function() vim.diagnostic.jump({ count = 1, float = true }) end, { desc = "Next Diagnostic" })
-
-
------------------------------
--- FzfLua Related Keymaps  --
------------------------------
-
--- k.set("n", "<leader><leader>", "<Cmd>FzfLua files<CR>", { desc = "Find files" })
-
--- FZF-Lua
--- k.set("n", "<leader>fb", "<Cmd>FzfLua buffers<CR>", { desc = "Find buffers" })
--- k.set("n", "<leader>fd", "<Cmd>FzfLua files cwd=~/.dotfiles/<CR>", { desc = "Find in .dotfiles" })
--- k.set("n", "<leader>ff", "<Cmd>FzfLua files<CR>", { desc = "Find files" })
--- k.set("n", "<leader>fg", "<Cmd>FzfLua live_grep<CR>", { desc = "Grep in files" })
--- k.set("n", "<leader>fh", "<Cmd>FzfLua help_tags<CR>", { desc = "Help tags" })
--- k.set("n", "<leader>fm", "<Cmd>FzfLua files cwd=/usr/share/man/<CR>", { desc = "Manuals" })
--- k.set("n", "<leader>fn", "<Cmd>FzfLua files cwd=~/.config/nvim<CR>", { desc = "Find in Neovim config" })
--- k.set("n", "<leader>fp", "<Cmd>FzfLua live_grep search_paths={\"~/code\"}<CR>", { desc = "Find projects" })
--- k.set("n", "<leader>fw", "<Cmd>FzfLua grep_cword<CR>", { desc = "Find word under cursor" })
-
--- Git with FZF-Lua
--- k.set("n", "<leader>gb", "<Cmd>FzfLua git_branches<CR>", { desc = "Git Branches" })
--- k.set("n", "<leader>gc", "<Cmd>FzfLua git_commits<CR>", { desc = "Git Commits" })
--- k.set("n", "<leader>gs", "<Cmd>FzfLua git_status<CR>", { desc = "Git Status" })
-
--- LSP thingies
--- k.set("n", "gd", "<Cmd>FzfLua lsp_definitions<CR>", { desc = "Go to Definition" })
--- k.set("n", "gr", "<Cmd>FzfLua lsp_references<CR>", { desc = "Go to References" })
--- k.set("n", "gI", "<Cmd>FzfLua lsp_implementations<CR>", { desc = "Go to Implementation" })
--- k.set("n", "gt", "<Cmd>FzfLua lsp_typedefs<CR>", { desc = "Go to Type Definition" })
