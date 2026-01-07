@@ -9,9 +9,9 @@ opt.number = true         -- show line numbers
 opt.relativenumber = true -- show relative line numbers
 
 -- Set default tab behavior
-opt.tabstop = 2        -- Number of spaces a tab counts for
-opt.shiftwidth = 2     -- Number of spaces to use for auto-indent
-opt.softtabstop = 2    -- Number of spaces a tab counts for during editing
+opt.tabstop = 4        -- Number of spaces a tab counts for
+opt.shiftwidth = 4     -- Number of spaces to use for auto-indent
+opt.softtabstop = 4    -- Number of spaces a tab counts for during editing
 opt.expandtab = true   -- Use spaces instead of tabs by default
 opt.autoindent = true  -- Copy indent from current line when starting new one
 opt.smartindent = true -- Auto-indent new lines
