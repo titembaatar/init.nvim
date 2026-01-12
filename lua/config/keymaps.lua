@@ -78,6 +78,9 @@ k.set("n", "<leader><space>", "<Cmd>lua Snacks.picker.smart()<CR>", { desc = "Sm
 -- Snacks Dashboard
 k.set("n", "<leader><Esc>", "<Cmd>lua Snacks.dashboard()<CR>", { desc = "Dashboard" })
 
+-- Snacks Notification History
+k.set("n", "<leader>nn", function() Snacks.notifier.show_history() end, { desc = "Notification History" })
+
 ----------------------
 -- Grouped Keymaps  --
 ----------------------
