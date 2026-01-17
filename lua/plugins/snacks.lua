@@ -3,6 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
+        enabled = true,
         prompt = " ; ",
         layout = { preset = "ivy", layout = { position = "bottom" } },
         sources = {
@@ -11,10 +12,12 @@ return {
           grep = { hidden = true, },
         },
       },
-      explorer = {},
-      notifier = {},
-      lazygit = {},
+      terminal = { enabled = true, },
+      explorer = { enabled = true, },
+      notifier = { enabled = true, },
+      lazygit = { enabled = true, },
       dashboard = {
+        enabled = true,
         preset = {
           keys = {
             { icon = "󰭎 ", key = "f", desc = "find file", action = ":lua Snacks.dashboard.pick('files')" },
