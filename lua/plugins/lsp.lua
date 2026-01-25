@@ -1,49 +1,30 @@
-return{
-  {
-    "mason-org/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = {
-        "bashls",
-        "docker_compose_language_service",
-        "marksman",
-        "clangd",
-        "lua_ls",
-        "gopls",
-        "jsonls",
-        "yamlls",
-        "taplo",
-      },
-    },
-    dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
-    },
-  },
+return {
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = {
+				"clangd", "lua_ls", "gopls",
+				"bashls",
+				"docker_compose_language_service", "marksman",
+				"jsonls", "yamlls", "taplo",
+			},
+		},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
 
-  {
-    "folke/lazydev.nvim",
-    ft = "lua",
-    opts = {
-      library = {
-        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-      },
-    },
-  },
+		vim.keymap.set("n", "<leader>m", "<Cmd>Mason<CR>", { desc = "Mason" })
+	},
 
-  {
-    "saghen/blink.cmp",
-    opts = {
-      fuzzy = { implementation = "lua" },
-      sources = {
-        default = { "lazydev", "lsp", "path", "snippets", "buffer" },
-        providers = {
-          lazydev = {
-            name = "LazyDev",
-            module = "lazydev.integrations.blink",
-            score_offset = 100,
-          },
-        },
-      },
-    },
-  },
+	{
+		'saghen/blink.cmp',
+		opts = {
+			completion = { documentation = { auto_show = false } },
+			sources = {
+				default = { 'lsp', 'path', 'buffer' },
+			},
+			fuzzy = { implementation = "lua" }
+		},
+	}
 }
