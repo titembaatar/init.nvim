@@ -14,6 +14,7 @@ return {
 			require("mini.files").setup({})
 			require("mini.diff").setup({ view = { style = "sign" } })
 			-- ui
+			require("mini.cursorword").setup({})
 			require("mini.icons").setup({})
 			require("mini.statusline").setup({ use_icons = true, })
 			require("mini.tabline").setup({})

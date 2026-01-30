@@ -18,4 +18,3 @@ o.signcolumn = "yes"
 o.scrolloff = 8
 
 o.clipboard = "unnamedplus"
-

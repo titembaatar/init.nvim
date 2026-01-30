@@ -39,6 +39,7 @@ return {
 			{ "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
 			{ "<leader>fd", function() Snacks.picker.git_diff() end, desc = "Git Diff (Hunks)" },
 			{ "<leader>fg", function() Snacks.picker.grep() end, desc = "Grep" },
+			{ "<leader>fh", function() Snacks.picker.highlights() end, desc = "Highlights" },
 			{ "<leader>fn", function() Snacks.picker.notifications() end, desc = "Notification History" },
 			{ "<leader>fv", function() Snacks.picker.grep_word() end, desc = "Visual selection or word", mode = { "n", "x" } },
 			{ "<leader>sd", function() Snacks.picker.diagnostics() end, desc = "Diagnostics" },

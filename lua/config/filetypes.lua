@@ -4,16 +4,10 @@ local lang = {
 		shiftwidth = 4,
 	},
 	lua = {
-		tabstop = 4,
-		shiftwidth = 4,
-	},
-	html = {
 		tabstop = 2,
 		shiftwidth = 2,
-		softtabstop = 2,
-		expandtab = true,
-		textwidth = 100,
-		colorcolumn = "101",
+		textwidth = 120,
+		colorcolumn = "121",
 	},
 	css = {
 		tabstop = 2,
