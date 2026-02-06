@@ -17,6 +17,14 @@ local lang = {
 		textwidth = 100,
 		colorcolumn = "101",
 	},
+	less = {
+		tabstop = 2,
+		shiftwidth = 2,
+		softtabstop = 2,
+		expandtab = true,
+		textwidth = 100,
+		colorcolumn = "101",
+	},
 	markdown = {
 		tabstop = 2,
 		shiftwidth = 2,
@@ -39,6 +47,13 @@ local lang = {
 		expandtab = true,
 	},
 	json = {
+		tabstop = 2,
+		shiftwidth = 2,
+		softtabstop = 2,
+		expandtab = true,
+		textwidth = 0,
+	},
+	jsonc = {
 		tabstop = 2,
 		shiftwidth = 2,
 		softtabstop = 2,

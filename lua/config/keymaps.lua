@@ -24,3 +24,10 @@ k.set("n", "<leader>/",  ":nohl<CR>",        { desc = "Clear search highlights" 
 k.set("n", "<leader>f",  "gg=G",             { desc = "Format" })
 k.set("n", "<leader>ci", "<Cmd>Inspect<CR>", { desc = "Inspect highlights" })
 
+k.set('v', '<leader>s', function()
+    vim.cmd('normal! "zy')
+    local selection = vim.fn.getreg('z')
+    local escaped_selection = vim.fn.escape(selection, '/\\^$*.[ ]')
+    local command = ":%s/" .. escaped_selection .. "//gc"
+    vim.api.nvim_feedkeys(command .. vim.api.nvim_replace_termcodes("<Left><Left><Left>", true, false, true), "n", false)
+end, { desc = "Search and replace visual selection" })
